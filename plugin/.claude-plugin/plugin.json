@@ -1,0 +1,7 @@
+{
+  "name": "muzic",
+  "description": "Let Claude listen to a track: tempo, key, chords with timing, energy, mood, melody, and a DAW project setup ready to apply.",
+  "version": "1.0.0",
+  "author": { "name": "Alex Gabay" },
+  "repository": "https://github.com/JinKazamaMishima/muzic-plugin"
+}
