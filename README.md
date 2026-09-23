@@ -17,7 +17,12 @@ No GitHub account needed. Inside Claude Code:
 
 ```
 /muzic:listen ~/Music/bounces/my-track.wav
+/muzic:replicate ~/Music/refs/that-track.wav
 ```
+
+`listen` describes a track. `replicate` rebuilds its skeleton: drums as MIDI
+with the swing, a one-bar drum loop, bass and melody MIDI, chords and sections,
+ready for SMYLZ Producer to drop into Live.
 
 Details, tools and troubleshooting: [`plugin/README.md`](plugin/README.md).
 The analysis itself runs on a hosted service; the plugin is a thin client

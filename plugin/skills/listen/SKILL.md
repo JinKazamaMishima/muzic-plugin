@@ -27,7 +27,8 @@ Argument: an audio file path. If `$ARGUMENTS` is empty, ask for the file.
    harmony against the track. Never touch an existing clip or device, and
    never write into the set unasked. If no Ableton tools are present, give
    the same steps as a checklist to do by hand.
-5. For a second track, compare: tempo difference, key relationship (same,
+5. If the user wants to rebuild the track rather than describe it — drums, bass and melody as MIDI, the loop, the sections — use `/muzic:replicate` (the `replicate_song` tool), which goes further than this analysis.
+6. For a second track, compare: tempo difference, key relationship (same,
    relative, a fifth apart), and whether the energy arcs match — useful for
    mixing, mashups and set building.
 

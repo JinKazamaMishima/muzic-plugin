@@ -9,7 +9,7 @@
       "name": "muzic",
       "source": "./plugin",
       "description": "Let Claude listen to a track: tempo, key, chords with timing, energy, mood, melody, and a DAW project setup ready to apply.",
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   ],
   "description": "Alex Gabay's music tools for Claude Code: muzic listens to a track and sets your Ableton project up from it."

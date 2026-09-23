@@ -23,7 +23,13 @@ checks the connection.
 
 ```
 /muzic:listen ~/Music/bounces/my-track.wav
+/muzic:replicate ~/Music/refs/that-track.wav
 ```
+
+`listen` describes a track in seconds. `replicate` rebuilds its skeleton in
+minutes: stems, drums as MIDI with the swing plus a one-bar drum loop, bass
+and melody as MIDI, chords, sections and sound hints, saved under
+`~/Music/muzic/<track>/` and handed to SMYLZ Producer's tools as note lists.
 
 or just tell Claude "listen to this" with a file path. Supported: mp3, wav,
 flac, ogg, m4a, aac, wma. Uploads are capped at 50 MB; if `ffmpeg` is
@@ -33,6 +39,11 @@ installed the plugin shrinks bigger bounces to a mono mp3 before sending.
 
 - `analyze_song(path, raw?)` — the profile plus a 4/4 chord chart; `raw: true`
   adds the full JSON with chord segments in seconds and the energy curve.
+- `replicate_song(path, bpm?)` — start a replicate job (minutes).
+- `replicate_status(job_id, out_dir?, with_stems?)` — poll; on completion downloads
+  the MIDI and the drum loop (and the stems if asked) and returns the summary.
+- `part_notes(job_id, part, from_bar?, to_bar?)` — a bar range of drums_loop, drums,
+  bass, melody or chords as `[pitch, start, duration, velocity]` in beats.
 - `muzic_health()` — is the API reachable, is the password accepted.
 
 ## Where the analysis runs
