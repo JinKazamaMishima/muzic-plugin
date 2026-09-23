@@ -5,11 +5,17 @@ progression bar by bar, the energy arc, mood, genre, melody range and
 loudness, then proposes the Ableton project setup and, if your Live set is
 connected to Claude Code, applies it on your say-so.
 
-No GitHub account needed. Inside Claude Code:
+No GitHub account needed. In a terminal (works for the terminal and the
+desktop app alike):
+
+```bash
+claude plugin marketplace add https://github.com/JinKazamaMishima/muzic-plugin.git
+claude plugin install muzic@muzic
+```
+
+Restart Claude, then in the chat:
 
 ```
-/plugin marketplace add https://github.com/JinKazamaMishima/muzic-plugin.git
-/plugin install muzic@muzic
 /muzic:setup
 ```
 

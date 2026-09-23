@@ -7,17 +7,29 @@ Claude Code, applies it on your say-so.
 
 ## Install
 
-No account needed. Inside Claude Code:
+No GitHub account needed. Open a terminal and run these two lines; they work
+whether you use Claude Code in the terminal or in the Claude desktop app, since
+plugins are installed for your user:
+
+```bash
+claude plugin marketplace add https://github.com/JinKazamaMishima/muzic-plugin.git
+claude plugin install muzic@muzic
+```
+
+Then restart Claude (or run `/reload-plugins` in an open session) and, in the
+chat:
 
 ```
-/plugin marketplace add https://github.com/JinKazamaMishima/muzic-plugin.git
-/plugin install muzic@muzic
 /muzic:setup
 ```
 
 `/muzic:setup` asks for the analysis API address (leave the default unless
 you were given one) and its password, writes them to `~/.muzic.json`, and
 checks the connection.
+
+Inside a terminal session the same two steps also work as `/plugin marketplace
+add …` and `/plugin install muzic@muzic`. In the desktop app those slash
+commands only open the Plugins window, so use the terminal lines above.
 
 ## Use
 
